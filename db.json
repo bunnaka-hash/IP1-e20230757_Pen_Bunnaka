@@ -1,0 +1,176 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Administrator",
+      "email": "admin@gmms.com",
+      "password": "admin123",
+      "role": "ADMIN",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "fullName": "Staff Member",
+      "email": "staff@gmms.com",
+      "password": "staff123",
+      "role": "STAFF",
+      "isActive": true
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "memberCode": "GM001",
+      "fullName": "Dara Sok",
+      "email": "dara@gmail.com",
+      "phone": "012345678",
+      "gender": "Male",
+      "dateOfBirth": "2001-05-12",
+      "address": "Phnom Penh",
+      "registeredAt": "2026-11-01",
+      "registeredBy": 2
+    },
+    {
+      "id": 2,
+      "memberCode": "GM002",
+      "fullName": "Sophea Chan",
+      "email": "sophea@gmail.com",
+      "phone": "098765432",
+      "gender": "Female",
+      "dateOfBirth": "2002-08-20",
+      "address": "Phnom Penh",
+      "registeredAt": "2026-11-05",
+      "registeredBy": 2
+    },
+    {
+      "id": 3,
+      "memberCode": "GM003",
+      "fullName": "Vannak Chea",
+      "email": "vannak@gmail.com",
+      "phone": "096123456",
+      "gender": "Male",
+      "dateOfBirth": "1999-03-15",
+      "address": "Kandal",
+      "registeredAt": "2026-11-10",
+      "registeredBy": 1
+    },
+    {
+      "fullName": "sasa",
+      "email": "sasa@gmail.com",
+      "phone": "02346380",
+      "gender": "Male",
+      "dateOfBirth": "2026-11-17",
+      "address": "--",
+      "memberCode": "GM92910",
+      "registeredAt": "2026-11-26",
+      "registeredBy": 1,
+      "id": 4
+    },
+    {
+      "fullName": "victor",
+      "email": "fagh@gmail.com",
+      "phone": "0976485278",
+      "gender": "Female",
+      "dateOfBirth": "2006-06-05",
+      "address": "pp",
+      "memberCode": "GM78620",
+      "registeredAt": "2026-11-27",
+      "registeredBy": 1,
+      "id": 5
+    }
+  ],
+  "membershipPlans": [
+    {
+      "id": 1,
+      "name": "Basic Monthly",
+      "price": 25,
+      "durationDays": 30,
+      "description": "Access to standard gym equipment",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "Premium Monthly",
+      "price": 40,
+      "durationDays": 30,
+      "description": "Full gym access and group classes",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "Annual Membership",
+      "price": 300,
+      "durationDays": 365,
+      "description": "Full gym access for one year",
+      "isActive": true
+    }
+  ],
+  "memberships": [
+    {
+      "id": 1,
+      "memberId": 1,
+      "planId": 1,
+      "startDate": "2026-11-01",
+      "expiryDate": "2026-12-01",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 2,
+      "memberId": 2,
+      "planId": 2,
+      "startDate": "2026-11-05",
+      "expiryDate": "2026-12-05",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 3,
+      "memberId": 3,
+      "planId": 1,
+      "startDate": "2026-11-10",
+      "expiryDate": "2026-12-10",
+      "status": "PENDING"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "memberId": 1,
+      "membershipId": 1,
+      "amount": 25,
+      "paymentMethod": "CASH",
+      "paymentDate": "2026-11-01",
+      "status": "PAID",
+      "recordedBy": 2
+    },
+    {
+      "id": 2,
+      "memberId": 2,
+      "membershipId": 2,
+      "amount": 40,
+      "paymentMethod": "ABA",
+      "paymentDate": "2026-11-05",
+      "status": "PAID",
+      "recordedBy": 2
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "fullName": "John Smith",
+      "phone": "012345678",
+      "specialization": "Fitness Training"
+    }
+  ],
+  "trainingClasses": [
+    {
+      "id": 1,
+      "name": "Morning Fitness",
+      "description": "Group fitness training",
+      "instructorId": 1,
+      "startTime": "2026-11-27T08:00:00",
+      "endTime": "2026-11-27T09:00:00",
+      "capacity": 20,
+      "status": "SCHEDULED"
+    }
+  ]
+}
